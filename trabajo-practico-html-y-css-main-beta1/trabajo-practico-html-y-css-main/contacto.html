@@ -44,22 +44,69 @@
     </header>
 
     <main>
-        <h2>Contacto</h2>
-
-
-
-
-
-
-
-
-
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105047.16919790616!2d-58.87635627748316!3d-34.63641344417917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc945bc2149eff%3A0x72f476f24b92b3fa!2sMoreno%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697290665365!5m2!1ses-419!2sar"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
+        <div class="Container-Contact">
+            <div class="content">
+              <div class="left">
+                <div class="details address">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Ubicacion</div>
+                  <div class="text-one">Buenos Aires, Argentina</div>
+                  <div class="text-two">560</div>
+                </div>
+                <div class="details phone">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Telefono</div>
+                  <div class="text-one">+91537 2638 645</div>
+                  <div class="text-two">+91537 2638 645</div>
+                </div>
+                <div class="details email">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">DiamondCakes@gmail.com</div>
+                  <div class="text-two">DiamondCakes@gmail.com</div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="topic-text">CONTACTANOS</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                  error! Cumque placeat nulla eligendi corrupti.
+                </p>
+                <form action="#">
+    
+            
+                  <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Ingrese Su Nombre" id="contact-name" onkeyup="validateName()">
+                    <span id="name-error"></span>
+                  </div>
+            
+                  <div class="input-group">
+                    <label>Telefono</label>
+                    <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                    <span id="phone-error"></span>
+                  </div>
+            
+                  <div class="input-group">
+                    <label>Email </label>
+                    <input type="email" placeholder="Ingrese Su Email" id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                  </div>   
+            
+                  <div class="input-group">
+                    <label>Su mensaje</label>
+                    <textarea rows="5" placeholder="Ingrese su Mensaje" id="contact-message" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"></span>
+                  </div>
+            
+                <button onclick="return validateForm()">ENVIAR</button>
+                <span id="submit-error"></span>
+    
+                </form>
+              </div>
+            </div>
+          </div>
+    
     </main>
 
     <footer>
@@ -107,7 +154,7 @@
         }
     </script>
 
-
+</body>
 
     </footer>
            
